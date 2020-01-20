@@ -22,3 +22,16 @@ function generateRange(min, max, step){
   }
   return array
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
