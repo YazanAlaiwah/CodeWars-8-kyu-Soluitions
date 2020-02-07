@@ -9,16 +9,12 @@
 
 //nothing here, you will feel pretty awsome to write down by yourself
 //have fun :)
-Array.prototype.filter = function(num){
-    var arr =[]
-    for (let i = 0; i < this.length;i++){
-      if(num(this[i])){
-      arr.push(this[i])
-      }
+Array.prototype.filter = function(num) {
+  var arr = [];
+  for (let i = 0; i < this.length; i++) {
+    if (num(this[i])) {
+      arr.push(this[i]);
     }
-    return arr
   }
-  
-  
-
-
+  return arr;
+};

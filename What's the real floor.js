@@ -5,16 +5,13 @@
 // Moreover, your function should work for basement floors too: just return the same value as the passed one.
 
 // Usage Examples
-// getRealFloor(1) == 0 
+// getRealFloor(1) == 0
 // getRealFloor(0) == 0 // Special case to please Europeans
 // getRealFloor(5) == 4
 // getRealFloor(15) == 13
 // getRealFloor(-3) == -3
 
-
 function getRealFloor(n) {
-    console.log(n)
-    return n === 0 ?0 : n > 0 && n< 13?n-1:n>13?n-2:n
-    }
-
-
+  console.log(n);
+  return n === 0 ? 0 : n > 0 && n < 13 ? n - 1 : n > 13 ? n - 2 : n;
+}

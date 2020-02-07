@@ -10,16 +10,7 @@
 
 // 1) Can you write a solution that will return null for both [] and [ x ] though? ( This is not tested, but you can write your own example test. )
 
-
-function firstNonConsecutive (arr) {
-    var x = Number(arr.filter((e,i)=>e-1!=arr[i-1])[1])
-   return x + ''==='NaN'?null:x
-   }
-
-
-
-
-
-
-
-
+function firstNonConsecutive(arr) {
+  var x = Number(arr.filter((e, i) => e - 1 != arr[i - 1])[1]);
+  return x + '' === 'NaN' ? null : x;
+}
