@@ -15,6 +15,25 @@ function feast(beast, dish) {
     //your function here
     return beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1]
     }
+let arr = [1,2,3,4,5,6,7,8,9]
+let isEven = (num) =>{
+  return new Promise((resolve,reject)=>{
+    if(num%2===0){resolve(true)}
+    else{reject(false)}
+  })
+}
+let consolePromiseResult = (num,data)=>{
+  console.log(num,data)
+}
+
+let isEvenArr = (arr,callBack1,callBack2)=>{
+  for(let i = 0; i < arr.length;i++){
+    callBack2(arr[i]).then(data=>callBack1(arr[i],data)).catch(err=>callBack1(arr[i],err))
+  }
+}
+isEvenArr(arr,consolePromiseResult,isEven)
+
+
 
 
 
